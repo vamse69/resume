@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vamsi Krishna Narisetty Resume</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+	*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+.navsec{
+	width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+      background-image: url('bodybg.jpg');
+
+}
+
+.navsec nav{
+	width: 100%;
+	height: 80px;
+	background: linear-gradient(to right, #000b39 5%, #00bac7 79%);
+    position: fixed;
+
+
+
+}
+label.logo {
+    font-size: 37px;
+    color: #fff;
+    line-height: 80px;
+    font-weight: 600;
+    margin-left: 25px;
+}
+
+.navsec nav ul{
+	float: right;
+	margin-right: 25px;
+	line-height: 80px;
+}
+
+.navsec nav ul li{
+	display: inline-flex;
+	list-style: none;
+	margin: 0 10px;
+
+}
+
+.navsec nav ul li a{
+	text-decoration: none;
+	font-weight: 600;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 0 10px;
+}
+#check{
+	display: none;
+}
+.checkbtn {
+    color: #fff;
+    font-size: 24px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+.body-1 {
+    /* z-index: 99; */
+    margin: auto;
+}
+.body-1 h1, p.intro-position {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
+.body-1 span::after {
+    content: "|";
+        margin-top: 23px;
+
+    text-align: center;
+    display: inline-block;
+    padding: 0 8px 0 14px;
+    color: rgba(255, 255, 255, 0.3);
+}
+p.intro-position {
+    /* align-items: center; */
+    text-align: center;
+        font-size: 37px;
+    color: #fff;
+
+}
+#about {
+    background: #FFFFFF;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+#about .section-intro {
+    margin-bottom: 3rem;
+}
+.section-intro {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 3.6rem;
+}
+.col-twelve, .col-full {
+    width: 100%;
+}
+.section-intro h5 {
+    color: #FF0077;
+    font-size: 1.6rem;
+    line-height: 1.875;
+    margin-bottom: 0.3rem;
+    letter-spacing: .4rem;
+}
+.section-intro h1 {
+    font-family: "poppins-semibold", serif;
+    font-size: 3.6rem;
+    color: #313131;
+    line-height: 1.25;
+    margin-bottom: 1.2rem;
+}
+.intro-info .lead {
+    padding-left: 13rem;
+    font-size: 24px;
+    text-align: justify;
+}
+p.lead {
+    font-family: "lora-regular", serif;
+    font-size: 25px;
+    line-height: 1.8;
+    color: #888888;
+}
+.intro-info {
+    margin-top: 4.2rem;
+    margin-right: -30px;
+    margin-left: -30px;
+}
+.intro-info img {
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    margin: .9rem 0 0 0;
+    float: left;
+}
+.col-md-6{
+	position: static;
+}
+.container-fluid {
+    padding-right: 100px;
+    padding-left: 100px;}
+
+.button-section {
+    text-align: center;
+}    
+#resume {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.col-twelve {
+    width: 100%;
+}
+#resume .timeline-block {
+    position: relative;
+    padding-top: 1.5rem;
+        padding-left: 6%;
+    padding-right: 6%;
+}
+
+#resume .timeline-header {
+    float: left;
+    width: 35%;
+    padding-right: 90px;
+    text-align: right;
+}
+#resume .timeline-content {
+    margin-left: 35%;
+    padding-left: 60px;
+}
+
+#resume .timeline-ico {
+    height: 4.8rem;
+    width: 4.8rem;
+    line-height: 4.8rem;
+    background: #313131;
+    border-radius: 50%;
+    text-align: center;
+    color: #FFFFFF;
+    position: absolute;
+    left: 35%;
+    top: .9rem;
+    margin-left: -2.4rem;
+}
+#resume .timeline-wrap::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 35%;
+    top: 0;
+}`
+#resume .timeline-wrap {
+    position: relative;
+    margin-top: 1.5rem;
+    margin-bottom: 6rem;
+}
+
+.grey-section {
+    background: #ebebeb;
+}
+#resume .resume-timeline {
+    max-width: 980px;
+}
+#resume .resume-header {
+    text-align: center;
+}
+#resume .timeline-wrap {
+    position: relative;
+    margin-top: 1.5rem;
+    margin-bottom: 6rem;
+}
+
+.row {
+    width: 94%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+@media (max-width: 800px){
+	label.logo {
+    font-size: 24px;
+}
+
+	.checkbtn{
+		display: block;
+		font-size: 25px;
+		font-weight: 600;
+	}
+	.navsec nav ul{
+		background: linear-gradient(to right, #000b39 5%, #00bac7 79%);
+	   		width: 100%;
+	   		height: 100vh;
+	   	    text-align: center;
+	   	    left: -100%;
+	   	    transition: all 0.5s;
+	   	    position: fixed;
+	   	    top: 80px;
+	}
+	.navsec nav ul li{
+	   		display: block;
+
+	   	}
+	 #check:checked ~ ul{
+	   		left: 0;
+	   	}  	
+	   	.intro-info img {
+	   		float: none;
+}
+.intro-info .lead {
+    padding: 12px 70px;
+    /* padding-left: 13rem; */
+    font-size: 24px;
+    text-align: justify;
+}
+	 
+}
+
+</style>
+</head>
+<body>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<section class="navsec">
+	<nav>
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<i class="fas fa-bars"></i>
+		</label>
+		<label class="logo">NARISETTY VAMSI KRISHNA</label>
+		<ul>
+			<li><a href="#"> Home</a></li>
+			<li><a href="#"> Projects</a></li>
+			<li><a href="#"> Contact</a></li>
+		</ul>
+	</nav>
+	<div class="body-1">
+		<h1>I'm Narisetty Vamsi Krishna.</h1>
+		<p class="intro-position">
+                        <span>WEB Developer</span>
+                        <span>WEB Designer</span>
+                        <span>SEO</span>
+
+                        </p>
+	</div>
+	</section>
+	<SECTION id="about">
+		<div class="row section-intro">
+                <div class="col-twelve">
+                    
+                    <h5>About</h5>
+                    <h1>Let me introduce myself.</h1>
+                    
+                    <div class="intro-info">
+                        
+                        <img src="VAMSIKRISSHNAN.jpg" alt="Profile Picture">
+                            
+                            <p class="lead">
+                            <p class="lead">I am an experienced Full Stack Developer with a demonstrated history of working in the industry. Strong media and communication professional with a Bachelor's of Technology in Electroincs and Communication Engineering from SSN Engg College, Ongole, India.</p>
+                            </div>
+                    
+                </div>
+            </div> <!-- /section-intro -->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <h4>Tools</h4>
+      <p>
+      	WordPress, Pycharm, Sublime, GitHub, Dreamweaver,Photoshop, MSQL Server Studio, XAMPP, MS Office.
+      </p>
+      <h4>FullName:</h4>
+      <p>Narisetty Vamsi Krishna</p>
+      <h4>Job:</h4>
+      <p>FULL STACK</p>
+      <h4>Email:</h4>
+      <p>vamse69@gmail.com</p>
+    </div>
+    <div class="col-md-6">
+      <h4>Operating Systems</h4>
+      <p>
+      	Windows, Ubantu
+      </p>
+
+      <h4>PROGRAMMING LANGUAGES, FRAMEWORKS & DATABASES</h4>
+      <h4>WebDesign</h4>
+      <p>
+      	HTML, CSS, JAVA SCRIPT, WORDPRESS, BLOGGER, DREAMWEAVER
+      </p>
+      <h4>WebDevelopment LANGUAGES</h4>
+      <p>
+      	PYTHON
+      </p>
+      <h4>Web Development Framework</h4>
+      <p>
+      	DJANGO
+      </p>
+      <h4>DataBases</h4>
+      <p>
+      	SQL, SQLITE1, MONGODB
+      </p>
+
+      
+
+
+    </div>
+  </div>
+</div>
+<div class="row button-section">
+                <div class="col-twelve">
+                    <a href="#" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
+                    <a href="#" title="Download CV" class="button button-primary">Download CV</a>
+                </div>
+            </div>
+		
+	</SECTION>
+	<section id="resume" class="grey-section">
+            
+            <div class="row section-intro">
+                <div class="col-twelve">
+                    
+                    <h5>Resume</h5>
+                    <h1>More of my credentials.</h1>
+                    
+                    <p class="lead">I am Looking to obtain full-time Bachelor positions to apply my knowledge and to acquire new skills and experience and work with a dynamic team to develop further insight in my area of development and contribute to the society and engineering profession.</p>
+                    
+                </div>
+            </div> <!-- /section-intro-->
+                        
+                        <div class="timeline-block">
+                            
+                            <div class="timeline-ico">
+                                <i class="fa fa-graduation-cap"></i>
+                            </div>
+                            
+                            <div class="timeline-header">
+                                <h3>Bachelor Degree</h3>
+                            </div>
+                            
+                            <div class="timeline-content">
+                                <h4>SSN COLLEGE OF ENGG AND TECHNOLOGY ― ONGOLE, INDIA</h4>
+                                <p>ELECTRONICS AND COMMUNICATION</p>
+                            </div>
+                            
+                        </div> <!-- /timeline-block -->
+                        
+                        <div class="timeline-block">
+                            
+                            <div class="timeline-ico">
+                                <i class="fa fa-graduation-cap"></i>
+                            </div>
+                            
+                            <div class="timeline-header">
+                                <h3>DIPLOMA</h3>
+                            </div>
+                            
+                            <div class="timeline-content">
+                                <h4>PRATOP POLYTECHNIC ― ONGOLE, INDIA</h4>
+                                <p>ELECTRONICS AND COMMUNICATION</p>
+                            </div>
+                            
+                        </div> <!-- /timeline-block -->
+                        
+                        
+                    </div> <!-- /timeline-wrap -->
+                    
+                </div> <!-- /col-twelve -->
+                
+            </div> <!-- /resume-timeline -->
+            
+        </div></section>
+
+	
+</body>
+</html>
